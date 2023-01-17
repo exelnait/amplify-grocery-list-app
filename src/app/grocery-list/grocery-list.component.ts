@@ -28,8 +28,8 @@ export class GroceryListComponent {
 
   async createItem() {
     const item = await DataStore.save(new Item({name: this.newItem, listID: this.list.id}));
-    this.newItem = '';
     this.items.push(item);
+    this.newItem = '';
   }
 
   async deleteItem(item: Item) {

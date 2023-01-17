@@ -14,21 +14,24 @@ export class GroceryHomeComponent {
   constructor(public appService: AppService, public router: Router) {
   }
 
+  newList: string = '';
   user: User;
   lists: List[] = []
 
   async ngOnInit() {
     this.user = await this.appService.getUser();
+    console.log('user', this.user)
     await this.queryLists()
   }
 
   async queryLists() {
-    this.lists = await DataStore.query(List, (l) => l.listUserId.eq(this.user.id));
+    this.lists = await DataStore.query(List, (l) => l.listUserId.eq(this.user?.id));
   }
 
   async createList() {
     const list = await DataStore.save(new List({name: 'New List', User: this.user}));
     this.lists.push(list);
+    this.newList = '';
   }
 
   async deleteList(list: List) {
