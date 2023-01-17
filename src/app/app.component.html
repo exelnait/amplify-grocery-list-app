@@ -22,7 +22,7 @@
             let-user="user"
             let-signOut="signOut"
     >
-<!--        <button (click)="signOut()">Sign Out</button>-->
+        <app-bar (onSignOut)="signOut()" />
         <router-outlet></router-outlet>
     </ng-template>
 </amplify-authenticator>

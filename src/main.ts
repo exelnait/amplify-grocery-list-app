@@ -4,6 +4,7 @@ import { AppModule } from './app/app.module';
 
 import { Amplify } from 'aws-amplify';
 import awsconfig from './aws-exports';
+import 'flowbite';
 
 Amplify.configure(awsconfig)
 
