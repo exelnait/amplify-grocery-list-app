@@ -30,7 +30,7 @@ export class AppService {
     `));
     console.log(result)
     if (result?.data?.listUsers?.items.length > 0) {
-      return new User(result.data.listUsers.items[0]);
+      return result.data.listUsers.items[0];
     } else {
       return null;
     }

@@ -29,7 +29,7 @@ export class GroceryHomeComponent {
   }
 
   async createList() {
-    const list = await DataStore.save(new List({name: 'New List', User: this.user}));
+    const list = await DataStore.save(new List({name: this.newList, listUserId: this.user.id}));
     this.lists.push(list);
     this.newList = '';
   }
