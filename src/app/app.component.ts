@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import {Amplify, Auth} from "aws-amplify";
+import {AuthenticatorService} from "@aws-amplify/ui-angular";
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'amplify-grocery-list-app';
+  constructor(public authenticator: AuthenticatorService) {
+  }
 }
