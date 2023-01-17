@@ -1,0 +1,14 @@
+{
+  "resourceName": "s3grocerylistdemostorage768cf47a",
+  "bucketName": "grocery-list-demo-storage-768cf47a",
+  "policyUUID": "76844d2c",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ]
+}

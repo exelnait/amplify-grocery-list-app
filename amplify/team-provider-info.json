@@ -1,0 +1,33 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-grocerylistdemo-staging-112427-authRole",
+      "UnauthRoleArn": "arn:aws:iam::981704123805:role/amplify-grocerylistdemo-staging-112427-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::981704123805:role/amplify-grocerylistdemo-staging-112427-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-grocerylistdemo-staging-112427-deployment",
+      "UnauthRoleName": "amplify-grocerylistdemo-staging-112427-unauthRole",
+      "StackName": "amplify-grocerylistdemo-staging-112427",
+      "StackId": "arn:aws:cloudformation:eu-central-1:981704123805:stack/amplify-grocerylistdemo-staging-112427/56968e10-9590-11ed-ae55-0aa2d400e970",
+      "AmplifyAppId": "d3ggz94rt9mot1",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-grocerylistdemo-staging-112427-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
+    },
+    "categories": {
+      "auth": {
+        "GroceryListDEMO": {}
+      },
+      "api": {
+        "GroceryListDEMO": {}
+      },
+      "function": {
+        "GroceryListDEMOPostConfirmation": {
+          "deploymentBucketName": "amplify-grocerylistdemo-staging-112427-deployment",
+          "s3Key": "amplify-builds/GroceryListDEMOPostConfirmation-672b4d486d426c71366d-build.zip"
+        }
+      },
+      "storage": {
+        "s3grocerylistdemostorage768cf47a": {}
+      }
+    }
+  }
+}

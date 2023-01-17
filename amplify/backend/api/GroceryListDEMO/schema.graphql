@@ -1,0 +1,19 @@
+type User @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  email: String!
+}
+
+type List @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  Items: [Item] @hasMany(indexName: "byList", fields: ["id"])
+  User: User @hasOne
+}
+
+type Item @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String!
+  listID: ID! @index(name: "byList")
+  pictureKey: String
+}
+ 
