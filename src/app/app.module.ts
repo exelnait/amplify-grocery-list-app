@@ -8,8 +8,6 @@ import { AppComponent } from './app.component';
 import {GroceryHomeModule} from "./grocery-home/grocery-home.module";
 import {GroceryListModule} from "./grocery-list/grocery-list.module";
 import {AppService} from "./app.service";
-import { AmplifyS3ImageComponent } from './amplify-s3-image/amplify-s3-image.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppBarComponent } from './app-bar/app-bar.component';
 
 @NgModule({
@@ -22,8 +20,7 @@ import { AppBarComponent } from './app-bar/app-bar.component';
     AmplifyAuthenticatorModule,
     AppRoutingModule,
     GroceryHomeModule,
-    GroceryListModule,
-    BrowserAnimationsModule
+    GroceryListModule
   ],
   providers: [
       AppService
